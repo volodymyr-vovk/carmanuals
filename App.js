@@ -53,12 +53,15 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.lighter,
   },
   tinyLogo: {
-   
+    flex: 1,
+    width: 200,
+    resizeMode: 'contain' 
   },
   container_logo: {
     flex: 1,
     marginLeft: 50,
     marginRight: 50,
+    height: 80,
     alignItems: "center", 
     justifyContent: "center"
   },
