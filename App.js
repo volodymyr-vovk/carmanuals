@@ -13,6 +13,7 @@ import {
   ScrollView,
   View,
   Text,
+  Image,
   StatusBar,
 } from 'react-native';
 
@@ -23,7 +24,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
-
+ 
 const App: () => React$Node = () => {
   return (
     <>
@@ -31,40 +32,15 @@ const App: () => React$Node = () => {
       <SafeAreaView>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
+          style={styles.scrollView}>        
           <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step # 4</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes 43</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
+          <View style={styles.container_logo}>
+          <Image
+        style={styles.tinyLogo}
+        source={require('./res/images/car-manuals-logo.png')}
+      />
+      </View> 
+            
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -75,6 +51,16 @@ const App: () => React$Node = () => {
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
+  },
+  tinyLogo: {
+   
+  },
+  container_logo: {
+    flex: 1,
+    marginLeft: 50,
+    marginRight: 50,
+    alignItems: "center", 
+    justifyContent: "center"
   },
   engine: {
     position: 'absolute',
