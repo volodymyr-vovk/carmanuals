@@ -39,7 +39,7 @@ const App: () => React$Node = () => {
         style={styles.tinyLogo}
         source={require('./res/images/car-manuals-logo.png')}
       />
-      </View>
+      </View> 
             
           </View>
         </ScrollView>
