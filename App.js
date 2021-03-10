@@ -52,14 +52,14 @@ const App: () => React$Node = () => {
       />
       </View> 
       <Picker
-  selectedValue={selectedLanguage}
-  onValueChange={(itemValue, itemIndex) =>
-    setSelectedLanguage(itemValue)}
-  mode={'dropdown'}>
-  {BRANDS.map((item, key) => {
-        return (<Picker.Item label={item.title} value={key} key={key}/>) 
-    })}
-</Picker>
+        selectedValue={selectedLanguage}
+        onValueChange={(itemValue, itemIndex) =>
+          setSelectedLanguage(itemValue)}
+          mode={'dropdown'}>
+          {BRANDS.map((item, key) => {
+              return (<Picker.Item label={item.title} value={key} key={key}/>) 
+          })}
+      </Picker>
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   tinyLogo: {
     flex: 1,
-    width: 200,
+    width: 250,
     resizeMode: 'contain' 
   },
   container_logo: {
