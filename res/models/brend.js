@@ -1,4 +1,4 @@
-class Brand {
+class Brend {
   constructor(id, title, image) {
     this.id = id;
     this.title = title;
@@ -6,4 +6,4 @@ class Brand {
   }
 }
 
-export default Brand;
+export default Brend;
