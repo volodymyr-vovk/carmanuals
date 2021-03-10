@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   tinyLogo: {
     flex: 1,
-    width: 220,
+    width: 230,
     resizeMode: 'contain' 
   },
   container_logo: {
