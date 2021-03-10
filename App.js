@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React , { useState } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -25,7 +25,18 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
  
+import {Picker} from '@react-native-picker/picker';
+
+import {BRANDS} from './res/data/dummy-data';
+
 const App: () => React$Node = () => {
+  const [selectedLanguage, setSelectedLanguage] = useState("java");
+  var options ={
+    "1": "Home",
+    "2": "Food",
+    "3": "Car",
+    "4": "Bank",
+  };
   return (
     <>
       <StatusBar barStyle="dark-content" />
@@ -40,7 +51,15 @@ const App: () => React$Node = () => {
         source={require('./res/images/car-manuals-logo.png')}
       />
       </View> 
-            
+      <Picker
+  selectedValue={selectedLanguage}
+  onValueChange={(itemValue, itemIndex) =>
+    setSelectedLanguage(itemValue)}
+  mode={'dropdown'}>
+  {BRANDS.map((item, key) => {
+        return (<Picker.Item label={item.title} value={key} key={key}/>) 
+    })}
+</Picker>
           </View>
         </ScrollView>
       </SafeAreaView>
