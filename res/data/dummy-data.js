@@ -1,16 +1,17 @@
 import Brend from '../models/brend';
+import Model from '../models/model';
 
 export const BRANDS = [
-  new Brand('b1', 'Acura', '../images/acura-small.png'),
-  new Brand('b2', 'Alfa Romeo', '../images/alfa-romeo-small.png'),
-  new Brand('b3', 'Audi', '../images/audi-small.png'),
-  new Brand('b4', 'BMW', '../images/bmw-small.png'),
-  new Brand('b5', 'Buick', '../images/buick-small.png'),
-  new Brand('b6', 'Cadillac', '../images/cadillac-small.png'),
-  new Brand('b7', 'Chevrolet', '../images/chevrolet-small.png'),
-  new Brand('b8', 'Chrysler', '../images/chrysler-small.png'),
-  new Brand('b9', 'Citroen', '../images/citroen-small.png'),
-  new Brand('b10', 'Daewoo', '../images/daewoo-small.png')
+  new Brend('b1', 'Acura', '../images/acura-small.png'),
+  new Brend('b2', 'Alfa Romeo', '../images/alfa-romeo-small.png'),
+  new Brend('b3', 'Audi', '../images/audi-small.png'),
+  new Brend('b4', 'BMW', '../images/bmw-small.png'),
+  new Brend('b5', 'Buick', '../images/buick-small.png'),
+  new Brend('b6', 'Cadillac', '../images/cadillac-small.png'),
+  new Brend('b7', 'Chevrolet', '../images/chevrolet-small.png'),
+  new Brend('b8', 'Chrysler', '../images/chrysler-small.png'),
+  new Brend('b9', 'Citroen', '../images/citroen-small.png'),
+  new Brend('b10', 'Daewoo', '../images/daewoo-small.png')
 ];
 
 export const MODELS = [
